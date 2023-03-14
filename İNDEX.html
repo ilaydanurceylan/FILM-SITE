@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #showcase {
+            background-image: url('/image/filmsitesiarkaplan2.jpg');
+            background-repeat: no-repeat;
+            height: 800px;
+            width: 100%;
+            background-size: cover;
+            padding: 10px;
+        }
+
+        #how-it-works {
+            background-color: white;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .plans {
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 40px;
+
+        }
+
+        .plan {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 5px;
+
+        }
+
+        .plan h2 {
+            font-size: 26px;
+            color: #3e4555;
+
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Nerko One', cursive;
+        }
+
+        .main-header {
+            background-color: #a084ca;
+            padding: 8px;
+        }
+
+        .main-header a {
+            font-size: 30px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 122px);
+            text-align: right;
+        }
+
+        .main-nav__items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav__item {
+            display: inline-block;
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        .main-header__logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a {
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+        }
+
+        .main-nav__item::before {
+            content: '\2022';
+            color: white;
+        }
+
+        .main-nav__item:hover::before,
+        .main-nav__item a:hover {
+            color: #2E4c6d;
+        }
+
+        .main-nav__item:active::before,
+        .main-nav__item a:active {
+            color: white;
+        }
+
+        .main-nav__item--login a {
+            color: white;
+            background-color: #2E4c6d;
+            border-radius: 8px;
+            border: 3px solid white;
+            padding: 4px 16px;
+        }
+
+        .main-nav__item--login::before {
+            content: none;
+        }
+
+        .main-nav__item--login a:hover {
+            background-color: white;
+            color: #2E4c6d;
+            border: 3px solid #2E4c6d;
+        }
+
+        .icon-box i {
+            color: #a084ca;
+            font-size: 50px;
+        }
+
+        .box1 {
+            width: 49%;
+            height: 330px;
+            display: inline-block;
+            background-image: url(/image/ram2.jpg);
+            background-position: center bottom;
+            background-size: cover;
+            vertical-align: top;
+
+        }
+
+        .box2 {
+            background-color: #c9bcdd;
+            width: 50%;
+            height: 330px;
+            display: inline-block;
+            padding: 30px;
+            vertical-align: top;
+            font-size: 22px;
+        }
+
+        .box2 a {
+            color: white;
+            background-color: #2E4c6d;
+            border-radius: 8px;
+            border: 2px solid white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .box2 a:hover {
+            background-color: white;
+            color: #2E4c6d;
+            border: 2px solid #2E4c6d;
+        }
+
+        .col {
+            height: 500px;
+            width: 30%;
+            background-color: #dbe8f7;
+            border-radius: 8px;
+            border: 2px solid #2E4c6d;
+            float: left;
+            margin: 15px;
+            padding: 16px;
+        }
+
+        .containers h3 {
+            font-size: 45px;
+        }
+
+        #premium {
+            height: 400px;
+        }
+
+        #free {
+            height: 430px;
+            margin-left: 30px;
+        }
+
+        .col h4 {
+            font-size: 26px;
+        }
+
+        .col h6 {
+            font-size: 20px;
+        }
+
+        .col li {
+            font-size: 19px;
+        }
+
+        .container {
+            text-align: center;
+            width: 1000;
+            margin: 0 auto;
+        }
+
+        .col a {
+            background-color: #c9bcdd;
+            color: #3e4555;
+            border: 2px solid #3e4555;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 10px;
+        }
+
+        .col a:hover {
+            background-color: white;
+            color: #a084ca;
+            border: 2px solid #a084ca;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .inner-plan {
+            background-color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Filmler</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Diziler</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="showcase">
+            <h1>Welcome To MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works?</h2>
+            <h5 style="font-size:26px ;">We will show you step how to start watching your favorite movies & tv shows
+                starting now!</h5>
+            <div class="plans">
+                <div class="plan icon-box">
+
+                    <i class="fa-solid fa-arrow-right-to-bracket fa-3x"></i>
+                    <h2>Register</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam rem cupiditate architecto
+                        vitae at.</p>
+                </div>
+                <div class="plan icon-box">
+                    <i class="fa-brands fa-buffer fa-3x"></i>
+                    <h2>Choose a Plan</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium! Beatae ut
+                        facilis ad libero.</p>
+                </div>
+                <div class="plan icon-box">
+                    <i class="fa-regular fa-face-smile fa-3x"></i>
+                    <h2>Enjoy Movify</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam earum repellendus
+                        aspernatur rem ipsum?</p>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <section id="features">
+        <div class="features__bigbox">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+                <h4>Watch all movies & Tv shovs once they get released!</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Pariatur incidunt eos non aperiam excepturi! Id atque labore at quia. Perspiciatis.</p>
+                <a href=":"> Viev Features </a>
+            </div>
+        </div>
+    </section>
+    <section id="plans">
+        <div class="container clearfix">
+            <h3>Become a premium member!</h3>
+            <div class="inner-plan">
+                <div class="col" id="free">
+                    <h4>Free</h4>
+                    <h6>0/month</h6>
+                    <ul>
+                        <li>HD available</li>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone&tablet</li>
+                        <li>Dowland and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>First month free</li>
+                        <a href=".">Choose Plan</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-plan">
+                <div class="col" id="recommended">
+                    <h4>Recommended</h4>
+                    <h4>Basic</h4>
+                    <h6> $9.99/month</h6>
+                    <ul>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone&tablet</li>
+                        <li>Dowland and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>First month free</li>
+                        <a href=".">Choose Plan</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-plan">
+                <div class="col" id="premium">
+                    <h4>Premium</h4>
+                    <h6>$19.99/month</h6>
+                    <ul>
+                        <li>Unlimited Movies and TV shows</li>
+                        <li>Watch on your phone&tablet</li>
+                        <li>Dowland and watch offline</li>
+                        <li>Screens you can watch</li>
+                        <li>First month free</li>
+                        <a href=".">Choose Plan</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+$
+</body>
+
+</html>
